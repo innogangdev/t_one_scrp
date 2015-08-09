@@ -19,10 +19,10 @@ for i in node:
             'title':node3[0].text,
             'site':"http://www.filmibeat.com/" + node1[0].attrib['href'],
             'image':node2[0].attrib['src'],
-            'source':"OneIndia",
+            'source':"FilmiBeat",
             'detail':node4[0].text,
             'sourceSiteType':'IMAGE',
-            'sourceUrl':'http://entertainment.oneindia.in',
-            'sourceLogo':'http://entertainment.oneindia.in/img/oneindia-entertainment.jpg'
+            'sourceUrl':'http://www.filmibeat.com/',
+            'sourceLogo':'http://www.filmibeat.com/images/filmi-beat-web.png'
         }
         scraperwiki.sqlite.save(unique_keys=['index'], data=data)
